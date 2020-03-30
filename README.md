@@ -1,5 +1,4 @@
-# 👷 `worker-template` to lock a webpage
-
+# 👷 A Cloudflare Worker to lock 🔓 a webpage
 
 A Cloudflare template which lets website owners easily deploy an access control layer for monetization with [Unlock](https://unlock-protocol.com).
 
