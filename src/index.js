@@ -1,7 +1,7 @@
 const paywall = require('@unlock-protocol/paywall')
 
 // Can we use the Cloudflare endpoint here?
-const readOnlyProvider = 'https://eth-mainnet.alchemyapi.io/jsonrpc/6idtzGwDtRbzil3s6QbYHr2Q_WBfn100'
+const readOnlyProvider = 'https://cloudflare-eth.com/'
 
 // This is used for "optimistic" unlocking: a service which ensures that "pending" transactions
 // are still taken into account to unlock a page.
@@ -90,7 +90,8 @@ async function handleRequest(request) {
           window.unlockProtocol.loadCheckoutModal();
         } else if (state === 'unlocked') {
           // Let's set a cookie based on the user's address
-          document.cookie = 'unlockAccount=' + unlockProtocol.getUserAccountAddress();
+          // Which is valid for 30 minutes.
+          document.cookie = 'unlockAccount=' + unlockProtocol.getUserAccountAddress() + '; Max-Age=1800';
           // We should then reload the page...
           window.location.reload();
         }

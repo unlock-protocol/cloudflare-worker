@@ -17,7 +17,7 @@
     "webpack-cli": "3.3.11"
   },
   "dependencies": {
-    "@unlock-protocol/paywall": "0.0.2",
+    "@unlock-protocol/paywall": "0.0.3",
     "node-fetch": "2.6.0"
   }
 }

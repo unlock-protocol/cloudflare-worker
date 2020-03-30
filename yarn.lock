@@ -2,10 +2,12 @@
 # yarn lockfile v1
 
 
-"@unlock-protocol/paywall@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@unlock-protocol/paywall/-/paywall-0.0.2.tgz#3a34e4cbe18a355d7b72d46897894da8479da8b4"
-  integrity sha512-IoaanTxjmr4AGuwhia9wRV+U2MhAJO3NxDEUEtQngQrMuDPP06h9Lf+0efjINkTuEv0hDUNx9vTHPn6hiV20Ag==
+"@unlock-protocol/paywall@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@unlock-protocol/paywall/-/paywall-0.0.3.tgz#ab7551eb13f3ecfc3b54f275061fd9e39c89ca18"
+  integrity sha512-4gIbImH1lKMrSqhSpmdIYKYtonA9FwQC3FFN22Y0+QaTnhnu3q6DbzPgv1BYpFBGzgmmZ6R7UFq3Mu/O3jxzMQ==
+  dependencies:
+    postmate "1.5.2"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -1890,6 +1892,11 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+postmate@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/postmate/-/postmate-1.5.2.tgz#d59a78b3780023c5d32225fd40633b364958bdb3"
+  integrity sha512-EHLlEmrUA/hALls49oBrtE7BzDXXjB9EiO4MZpsoO3R/jRuBmD+2WKQuYAbeuVEpTzrPpUTT79z2cz4qaFgPRg==
 
 prettier@^1.18.2:
   version "1.19.1"
