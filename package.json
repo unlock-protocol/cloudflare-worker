@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "cloudflare-worker",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "src.index.js",
+  "scripts": {
+    "build": "webpack src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Julien Genestoux <julien.genestoux@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11"
+  },
+  "dependencies": {
+    "@unlock-protocol/paywall": "0.0.2",
+    "node-fetch": "2.6.0"
+  }
+}
