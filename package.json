@@ -1,23 +1,25 @@
 {
   "private": true,
-  "name": "cloudflare-worker",
-  "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "name": "unlock-cloudflare-worker",
+  "version": "2.0.0",
+  "description": "A Cloudflare worker to token-gate any Cloudflare hosted application",
   "main": "src.index.js",
   "scripts": {
     "build": "webpack src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "wrangler": "wrangler",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
-  "author": "Julien Genestoux <julien.genestoux@gmail.com>",
+  "author": "Unlock Inc",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^1.18.2",
+    "@cloudflare/wrangler": "1.19.7",
+    "prettier": "1.18.2",
     "webpack": "4.42.1",
     "webpack-cli": "3.3.11"
   },
   "dependencies": {
-    "@unlock-protocol/paywall": "0.0.3",
-    "node-fetch": "2.6.0"
+    "ethers": "5.5.4",
+    "string-replace-loader": "3.1.0"
   }
 }

@@ -1,4 +1,4 @@
-name = "cloudflare-worker"
+name = "unlock-cloudflare-worker"
 type = "webpack"
 account_id = "30fa248ff7b03cfcac765dae9509bba0"
 workers_dev = true
