@@ -4,14 +4,32 @@ A Cloudflare woekr which lets website owners easily deploy an access control lay
 
 You can try it out by going to https://token-gated.com/ which is token gated an requires ownership of a membership (it is using the Rinkeby test network, so you don't need to spend real money).
 
-# How to
+## How to
 
-Clone the repo:
+1. Clone the repo:
 
-Authenticate!
+```bash
+git clone git@github.com:unlock-protocol/cloudflare-worker.git
+```
 
-wranger login
+2. Update its `.src/config.js` file to match your needs. Importantly, you need to keep the `pessimistic` mode to be `true` .
 
-# Publish!
+3) Install dependencies
 
-wrangler publish
+```bash
+yarn
+```
+
+4. Push to cloudflare
+
+```bash
+yarn wrangler publish
+```
+
+(You will likely be prompted to login to CloudFlare first)
+
+5. Now that the worker is deployed, you need to link it to your CloudFlare sites. Your mileage may vary but here is howe we did it for https://token-gated.com. From the Cloudflare Dashboard, select your website, in the left column, click on "Workers". Click the `Add Route` button. Enter the route(s) you want to "token-gate". In the `Service` select, pick the `unlock-cloudflare-worker` and select the environment of choice. Hit `Save`. You're all set!
+
+## Contributing
+
+You are encouraged to open pull-requests and help us improve this worker!
